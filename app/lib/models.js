@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose"
+import mongoose from "mongoose"
 
 const userShema = new mongoose.Schema({
     username: {
@@ -46,12 +46,12 @@ const productShema = new mongoose.Schema({
         required: true,
     },
     price: {
-        type: number,
+        type: Number,
         required: true,
         min: 0,
     },
     stock: {
-        type: number,
+        type: Number,
         required: true,
         min: 0,
     },
